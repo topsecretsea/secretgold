@@ -1,13 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Secret EA — Automated Forex Trading</title>
+  <meta name="description" content="Explore Secret EA automation tools for MT4 and MT5, trading signals, copy-trading features and risk-management resources." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-<!-- Meta Pixel Code -->
+ <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){
   if(f.fbq)return;
@@ -91,7 +93,7 @@ fbq('track', 'PageView');
     body.rtl .bonus-badge { right: auto; left: 18px; }
 
     /* Lang switcher */
-    .lang-switcher{position:fixed;top:16px;right:16px;z-index:100;display:flex;gap:8px}
+    .lang-switcher{position:fixed;top:16px;right:16px;z-index:100;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:390px}
     body.rtl .lang-switcher{right:auto;left:16px}
     .lang-btn{background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);
       color:var(--gold);font-size:12px;font-weight:600;letter-spacing:1px;
@@ -198,16 +200,19 @@ fbq('track', 'PageView');
     footer a{color:var(--gold);text-decoration:none}
 
     @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:480px){.stats{gap:20px}.btn-cta{padding:17px 28px;font-size:15px}.lang-switcher{top:10px;right:10px;gap:5px}.lang-btn{padding:5px 9px;font-size:11px}}
+    @media(max-width:480px){.hero{padding-top:104px}.stats{gap:20px}.btn-cta{padding:17px 28px;font-size:15px}.lang-switcher{top:10px;right:10px;left:10px;gap:5px;max-width:none;justify-content:center}.lang-btn{padding:5px 9px;font-size:11px}body.rtl .lang-switcher{right:10px;left:10px}}
   </style>
 </head>
 <body>
 
   <!-- Language Switcher -->
-  <div class="lang-switcher">
-    <button class="lang-btn active" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('es')">ES</button>
-    <button class="lang-btn" onclick="setLang('ar')">AR</button>
+  <div class="lang-switcher" role="group" aria-label="Language selection">
+    <button class="lang-btn active" type="button" data-lang="en" onclick="setLang('en')" aria-label="English">EN</button>
+    <button class="lang-btn" type="button" data-lang="es" onclick="setLang('es')" aria-label="Español">ES</button>
+    <button class="lang-btn" type="button" data-lang="ar" onclick="setLang('ar')" aria-label="العربية">AR</button>
+    <button class="lang-btn" type="button" data-lang="de" onclick="setLang('de')" aria-label="Deutsch">DE</button>
+    <button class="lang-btn" type="button" data-lang="fr" onclick="setLang('fr')" aria-label="Français">FR</button>
+    <button class="lang-btn" type="button" data-lang="it" onclick="setLang('it')" aria-label="Italiano">IT</button>
   </div>
 
   <!-- HERO -->
@@ -233,7 +238,7 @@ fbq('track', 'PageView');
         <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
         <span id="btn-hero">Telegram: Join Group Chat</span>
       </a>
-      <p class="cta-note" id="cta-note">Free entry · Exclusive content · Verified results</p>
+      <p class="cta-note" id="cta-note">Free entry · Educational content · Risk-conscious approach</p>
     </div>
   </section>
 
@@ -248,17 +253,17 @@ fbq('track', 'PageView');
         <div class="feat-card">
           <div class="feat-icon">⚙️</div>
           <div class="feat-title" id="f1t">100% Automated</div>
-          <div class="feat-desc" id="f1d">The robot trades 24h a day with no monitoring needed. Set it up once and let it work for you.</div>
+          <div class="feat-desc" id="f1d">The software can run continuously according to your settings. Regular monitoring and risk controls remain important.</div>
         </div>
         <div class="feat-card">
           <div class="feat-icon">🛡️</div>
           <div class="feat-title" id="f2t">Risk Control</div>
-          <div class="feat-desc" id="f2d">Smart hedge strategy with ready-made presets for all profiles, from conservative to aggressive.</div>
+          <div class="feat-desc" id="f2d">Smart hedge strategy with configurable presets. Review each setting against your objectives and risk tolerance.</div>
         </div>
         <div class="feat-card">
           <div class="feat-icon">📊</div>
-          <div class="feat-title" id="f3t">Verified Results</div>
-          <div class="feat-desc" id="f3d">Performance published and audited on Myfxbook. Full transparency, no surprises.</div>
+          <div class="feat-title" id="f3t">Performance Information</div>
+          <div class="feat-desc" id="f3d">Historical performance data may be consulted on Myfxbook when available. Past performance does not predict future results.</div>
         </div>
         <div class="feat-card">
           <div class="feat-icon">🔄</div>
@@ -274,7 +279,7 @@ fbq('track', 'PageView');
     <div class="section-inner">
       <p class="section-label" id="bonus-label">Included in your plan</p>
       <h2 class="section-title" id="bonus-title">Everything You<br /><span style="color:var(--gold)" id="bonus-title-span">Receive</span></h2>
-      <p class="section-desc" id="bonus-desc">When you join the channel you get immediate access to exclusive benefits that boost your results.</p>
+      <p class="section-desc" id="bonus-desc">When you join the channel, you receive access to resources designed to support your trading workflow.</p>
       <div class="gold-line"></div>
       <div class="bonus-grid">
 
@@ -295,12 +300,12 @@ fbq('track', 'PageView');
           <div class="bonus-badge" id="b2-badge">Included</div>
           <div class="bonus-icon-wrap">🔁</div>
           <div class="bonus-title" id="b2-title">Copy Trade</div>
-          <div class="bonus-desc" id="b2-desc">Copy trades automatically without any manual configuration needed.</div>
+          <div class="bonus-desc" id="b2-desc">Replicate trades using supported automation tools after reviewing the available settings and risk parameters.</div>
           <ul class="bonus-list">
             <li id="b2-1">Automatic trade replication</li>
             <li id="b2-2">Works with MT4 and MT5</li>
-            <li id="b2-3">Perfect for beginners</li>
-            <li id="b2-4">No personal analysis required</li>
+            <li id="b2-3">Guidance available for new users</li>
+            <li id="b2-4">Review settings and risks before activation</li>
           </ul>
         </div>
 
@@ -332,7 +337,7 @@ fbq('track', 'PageView');
         <span id="btn-bottom">Telegram: Join Group Chat</span>
       </a>
       <div class="disclaimer" id="disclaimer">
-        ⚠️ <strong>Risk Warning:</strong> Trading in Forex and financial markets involves significant risk of capital loss. Past results do not guarantee future results. Never trade with money you cannot afford to lose. This channel is for educational and informational purposes only.
+        ⚠️ <strong>Risk Warning:</strong> Trading in financial markets involves risk. Past results do not guarantee future results. Performance may vary according to market conditions, the settings used and each user's risk profile. Never trade with money you cannot afford to lose. This channel is for educational and informational purposes only.
       </div>
     </div>
   </section>
@@ -349,110 +354,194 @@ fbq('track', 'PageView');
       dir: 'ltr',
       htmlLang: 'en',
       title: 'Secret EA — Automated Forex Trading',
+      description: 'Explore Secret EA automation tools for MT4 and MT5, trading signals, copy-trading features and risk-management resources.',
+      heroLead: 'Trade on',
       heroH1: 'Trade on<br /><span id="hero-span">Autopilot</span>',
       heroSpan: 'Autopilot',
       heroSub: 'Expert Advisor for MT4 & MT5 with smart hedge strategy. Automate your trades and access signals, copy trading and much more.',
       stat1:'Compatible', stat2:'Compatible', stat3:'Automated', stat4:'Access Included',
       btnHero:'Telegram: Join Group Chat',
-      ctaNote:'Free entry · Exclusive content · Verified results',
+      ctaNote:'Free entry · Educational content · Risk-conscious approach',
       featLabel:'Why choose us',
       featTitle:'The Robot that Works',
       featTitleSpan:'for You',
       featDesc:'Professional automation technology available to every trader.',
-      f1t:'100% Automated', f1d:'The robot trades 24h a day with no monitoring needed. Set it up once and let it work for you.',
-      f2t:'Risk Control', f2d:'Smart hedge strategy with ready-made presets for all profiles, from conservative to aggressive.',
-      f3t:'Verified Results', f3d:'Performance published and audited on Myfxbook. Full transparency, no surprises.',
+      f1t:'100% Automated', f1d:'The software can run continuously according to your settings. Regular monitoring and risk controls remain important.',
+      f2t:'Risk Control', f2d:'Smart hedge strategy with configurable presets. Review each setting against your objectives and risk tolerance.',
+      f3t:'Performance Information', f3d:'Historical performance data may be consulted on Myfxbook when available. Past performance does not predict future results.',
       f4t:'MT4 & MT5', f4d:'Compatible with the two most used platforms in the world. Easy setup with support included.',
       bonusLabel:'Included in your plan',
       bonusTitle:'Everything You',
       bonusTitleSpan:'Receive',
-      bonusDesc:'When you join the channel you get immediate access to exclusive benefits that boost your results.',
+      bonusDesc:'When you join the channel, you receive access to resources designed to support your trading workflow.',
       b1Badge:'Free', b1Title:'Signals Room', b1Desc:'Receive real-time entry alerts directly in the VIP channel.',
       b1_1:'XAU/USD signals and major pairs', b1_2:'Entry, stop loss and take profit defined',
       b1_3:'Market context analysis with each signal', b1_4:'Sent directly via Telegram',
-      b2Badge:'Included', b2Title:'Copy Trade', b2Desc:'Copy trades automatically without any manual configuration needed.',
+      b2Badge:'Included', b2Title:'Copy Trade', b2Desc:'Replicate trades using supported automation tools after reviewing the available settings and risk parameters.',
       b2_1:'Automatic trade replication', b2_2:'Works with MT4 and MT5',
-      b2_3:'Perfect for beginners', b2_4:'No personal analysis required',
+      b2_3:'Guidance available for new users', b2_4:'Review settings and risks before activation',
       b3Badge:'Exclusive', b3Title:'VIP Bonus', b3Desc:'Channel members get access to content and benefits not available anywhere else.',
       b3_1:'Full Expert Advisor access', b3_2:'Ready-made configured presets',
       b3_3:'Robot updates included', b3_4:'Direct support from the team',
       bottomH2:'Ready to', bottomSpan:'Get Started?',
       bottomP:'Join the channel now and discover how to automate your trades with Secret EA.',
       btnBottom:'Telegram: Join Group Chat',
-      disclaimer:'⚠️ <strong>Risk Warning:</strong> Trading in Forex and financial markets involves significant risk of capital loss. Past results do not guarantee future results. Never trade with money you cannot afford to lose. This channel is for educational and informational purposes only.',
+      disclaimer:'⚠️ <strong>Risk Warning:</strong> Trading in financial markets involves risk. Past results do not guarantee future results. Performance may vary according to market conditions, the settings used and each user\'s risk profile. Never trade with money you cannot afford to lose. This channel is for educational and informational purposes only.',
       footerCopy:'© 2026 Secret EA — All rights reserved.'
     },
     es: {
       dir: 'ltr',
       htmlLang: 'es',
       title: 'Secret EA — Trading Forex Automatizado',
+      description: 'Conoce las herramientas de automatización de Secret EA para MT4 y MT5, señales, copy trading y recursos de gestión del riesgo.',
+      heroLead: 'Opera con',
       heroSpan: 'Piloto Automático',
       heroSub: 'Expert Advisor para MT4 y MT5 con estrategia de cobertura inteligente. Automatiza tus operaciones y accede a señales, copy trading y mucho más.',
       stat1:'Compatible', stat2:'Compatible', stat3:'Automatizado', stat4:'Acceso VIP Incluido',
       btnHero:'Telegram: Unirse al Grupo',
-      ctaNote:'Entrada gratuita · Contenido exclusivo · Resultados verificados',
+      ctaNote:'Acceso gratuito · Contenido educativo · Enfoque responsable del riesgo',
       featLabel:'Por qué elegirnos',
       featTitle:'El Robot que Trabaja',
       featTitleSpan:'por Ti',
       featDesc:'Tecnología de automatización profesional disponible para cualquier trader.',
-      f1t:'100% Automatizado', f1d:'El robot opera 24h al día sin necesidad de monitoreo. Configúralo una vez y deja que trabaje por ti.',
-      f2t:'Control de Riesgo', f2d:'Estrategia de cobertura inteligente con presets listos para todos los perfiles, del conservador al agresivo.',
-      f3t:'Resultados Verificados', f3d:'Rendimiento publicado y auditado en Myfxbook. Total transparencia, sin sorpresas.',
+      f1t:'100% Automatizado', f1d:'El software puede funcionar de forma continua según la configuración elegida. La supervisión periódica y los controles de riesgo siguen siendo importantes.',
+      f2t:'Control de Riesgo', f2d:'Estrategia de cobertura inteligente con ajustes configurables. Revise cada parámetro según sus objetivos y tolerancia al riesgo.',
+      f3t:'Información de Rendimiento', f3d:'Los datos históricos de rendimiento pueden consultarse en Myfxbook cuando estén disponibles. El rendimiento pasado no predice resultados futuros.',
       f4t:'MT4 y MT5', f4d:'Compatible con las dos plataformas más usadas del mundo. Instalación sencilla con soporte incluido.',
       bonusLabel:'Incluido en tu plan',
       bonusTitle:'Todo lo que',
       bonusTitleSpan:'Recibes',
-      bonusDesc:'Al unirte al canal tienes acceso inmediato a beneficios exclusivos que aceleran tus resultados.',
+      bonusDesc:'Al unirte al canal, accedes a recursos diseñados para respaldar tu operativa.',
       b1Badge:'Gratis', b1Title:'Sala de Señales', b1Desc:'Recibe alertas de entrada en tiempo real directamente en el canal VIP.',
       b1_1:'Señales XAU/USD y principales pares', b1_2:'Entrada, stop loss y take profit definidos',
       b1_3:'Análisis de contexto de mercado en cada señal', b1_4:'Enviadas directamente por Telegram',
-      b2Badge:'Incluido', b2Title:'Copy Trade', b2Desc:'Copia operaciones automáticamente sin configuración manual.',
+      b2Badge:'Incluido', b2Title:'Copy Trade', b2Desc:'Replica operaciones con herramientas de automatización compatibles tras revisar los ajustes y parámetros de riesgo disponibles.',
       b2_1:'Replicación automática de trades', b2_2:'Funciona con MT4 y MT5',
-      b2_3:'Ideal para principiantes', b2_4:'Sin análisis propio necesario',
+      b2_3:'Orientación disponible para nuevos usuarios', b2_4:'Revise los ajustes y riesgos antes de activar',
       b3Badge:'Exclusivo', b3Title:'Bono VIP', b3Desc:'Los miembros del canal acceden a contenidos y beneficios que no existen en ningún otro lugar.',
       b3_1:'Acceso completo al Expert Advisor', b3_2:'Presets configurados y listos',
       b3_3:'Actualizaciones del robot incluidas', b3_4:'Soporte directo con el equipo',
       bottomH2:'¿Listo para', bottomSpan:'Empezar?',
       bottomP:'Únete al canal ahora y descubre cómo automatizar tus operaciones con Secret EA.',
       btnBottom:'Telegram: Unirse al Grupo',
-      disclaimer:'⚠️ <strong>Advertencia de Riesgo:</strong> Operar en Forex y mercados financieros conlleva un riesgo significativo de pérdida de capital. Los resultados pasados no garantizan resultados futuros. Nunca opere con dinero que no pueda permitirse perder. Este canal tiene carácter educativo e informativo.',
+      disclaimer:'⚠️ <strong>Advertencia de riesgo:</strong> Las operaciones en los mercados financieros conllevan riesgos. Los resultados anteriores no garantizan resultados futuros. El rendimiento puede variar según las condiciones del mercado, la configuración utilizada y el perfil de riesgo de cada usuario. Nunca opere con dinero que no pueda permitirse perder. Este canal tiene fines educativos e informativos.',
       footerCopy:'© 2026 Secret EA — Todos los derechos reservados.'
     },
     ar: {
       dir: 'rtl',
       htmlLang: 'ar',
       title: 'Secret EA — تداول الفوركس الآلي',
+      description: 'تعرّف على أدوات Secret EA للأتمتة على MT4 وMT5 وإشارات التداول ونسخ الصفقات وموارد إدارة المخاطر.',
+      heroLead: 'تداول عبر',
       heroSpan: 'الطيار الآلي',
       heroSub: 'خبير مستشار لـ MT4 و MT5 مع استراتيجية تحوط ذكية. أتمتة صفقاتك والوصول إلى الإشارات والنسخ والمزيد.',
       stat1:'متوافق', stat2:'متوافق', stat3:'آلي', stat4:'وصول VIP مشمول',
       btnHero:'تيليغرام: انضم إلى المجموعة',
-      ctaNote:'دخول مجاني · محتوى حصري · نتائج موثقة',
+      ctaNote:'دخول مجاني · محتوى تعليمي · نهج واعٍ بالمخاطر',
       featLabel:'لماذا تختارنا',
       featTitle:'الروبوت الذي يعمل',
       featTitleSpan:'من أجلك',
       featDesc:'تقنية أتمتة احترافية متاحة لكل متداول.',
-      f1t:'آلي 100٪', f1d:'يعمل الروبوت 24 ساعة يوميًا دون الحاجة إلى مراقبة. اضبطه مرة واحدة واتركه يعمل من أجلك.',
-      f2t:'التحكم في المخاطر', f2d:'استراتيجية تحوط ذكية مع إعدادات جاهزة لجميع الملفات الشخصية، من المحافظ إلى العدواني.',
-      f3t:'نتائج موثقة', f3d:'الأداء منشور ومدقق على Myfxbook. شفافية كاملة، بلا مفاجآت.',
+      f1t:'آلي 100٪', f1d:'يمكن للبرنامج العمل باستمرار وفق الإعدادات التي تختارها. وتظل المراقبة المنتظمة وضوابط المخاطر أمرًا مهمًا.',
+      f2t:'التحكم في المخاطر', f2d:'استراتيجية تحوط ذكية بإعدادات قابلة للتخصيص. راجع كل إعداد بما يتوافق مع أهدافك وقدرتك على تحمل المخاطر.',
+      f3t:'معلومات الأداء', f3d:'يمكن الاطلاع على بيانات الأداء التاريخية على Myfxbook عند توفرها. الأداء السابق لا يتنبأ بالنتائج المستقبلية.',
       f4t:'MT4 و MT5', f4d:'متوافق مع المنصتين الأكثر استخدامًا في العالم. إعداد سهل مع الدعم الفني مشمول.',
       bonusLabel:'مشمول في خطتك',
       bonusTitle:'كل ما',
       bonusTitleSpan:'ستحصل عليه',
-      bonusDesc:'عند انضمامك إلى القناة، ستحصل على وصول فوري إلى مزايا حصرية تعزز نتائجك.',
+      bonusDesc:'عند انضمامك إلى القناة، ستحصل على موارد مصممة لدعم أسلوب عملك في التداول.',
       b1Badge:'مجاني', b1Title:'غرفة الإشارات', b1Desc:'تلقَّ تنبيهات الدخول في الوقت الفعلي مباشرةً في قناة VIP.',
       b1_1:'إشارات XAU/USD والأزواج الرئيسية', b1_2:'نقطة الدخول ووقف الخسارة وجني الأرباح محددة',
       b1_3:'تحليل سياق السوق مع كل إشارة', b1_4:'ترسل مباشرة عبر تيليغرام',
-      b2Badge:'مشمول', b2Title:'النسخ التلقائي', b2Desc:'انسخ الصفقات تلقائيًا دون الحاجة إلى أي إعداد يدوي.',
+      b2Badge:'مشمول', b2Title:'النسخ التلقائي', b2Desc:'انسخ الصفقات باستخدام أدوات الأتمتة المدعومة بعد مراجعة الإعدادات ومعايير المخاطر المتاحة.',
       b2_1:'نسخ الصفقات تلقائيًا', b2_2:'يعمل مع MT4 و MT5',
-      b2_3:'مثالي للمبتدئين', b2_4:'لا حاجة إلى تحليل شخصي',
+      b2_3:'إرشادات متاحة للمستخدمين الجدد', b2_4:'راجع الإعدادات والمخاطر قبل التفعيل',
       b3Badge:'حصري', b3Title:'مكافأة VIP', b3Desc:'يتمتع أعضاء القناة بمحتوى ومزايا غير متاحة في أي مكان آخر.',
       b3_1:'وصول كامل إلى Expert Advisor', b3_2:'إعدادات جاهزة ومُهيأة',
       b3_3:'تحديثات الروبوت مشمولة', b3_4:'دعم مباشر من الفريق',
       bottomH2:'هل أنت مستعد', bottomSpan:'للبدء؟',
       bottomP:'انضم إلى القناة الآن واكتشف كيفية أتمتة صفقاتك مع Secret EA.',
       btnBottom:'تيليغرام: انضم إلى المجموعة',
-      disclaimer:'⚠️ <strong>تحذير المخاطر:</strong> ينطوي التداول في الفوركس والأسواق المالية على مخاطر كبيرة لخسارة رأس المال. النتائج السابقة لا تضمن نتائج مستقبلية. لا تتداول أبدًا بأموال لا تستطيع تحمل خسارتها. هذه القناة ذات طابع تعليمي وإعلامي فقط.',
+      disclaimer:'⚠️ <strong>تحذير المخاطر:</strong> تنطوي العمليات في الأسواق المالية على مخاطر. النتائج السابقة لا تضمن النتائج المستقبلية. وقد يختلف الأداء بحسب ظروف السوق والإعدادات المستخدمة وملف المخاطر لكل مستخدم. لا تتداول أبدًا بأموال لا تستطيع تحمل خسارتها. هذه القناة لأغراض تعليمية وإعلامية فقط.',
       footerCopy:'© 2026 Secret EA — جميع الحقوق محفوظة.'
+    },
+    de: {
+      dir:'ltr', htmlLang:'de', title:'Secret EA — Automatisierter Forex-Handel',
+      description:'Entdecken Sie die Automatisierungstools von Secret EA für MT4 und MT5, Handelssignale, Copy Trading und Ressourcen zum Risikomanagement.',
+      heroLead:'Handeln mit', heroSpan:'Autopilot',
+      heroSub:'Expert Advisor für MT4 und MT5 mit intelligenter Hedging-Strategie. Automatisieren Sie Abläufe und nutzen Sie Signale, Copy Trading und weitere Funktionen.',
+      stat1:'Kompatibel', stat2:'Kompatibel', stat3:'Automatisiert', stat4:'Zugang inklusive',
+      btnHero:'Telegram: Gruppenchat beitreten', ctaNote:'Kostenloser Zugang · Lerninhalte · Risikobewusster Ansatz',
+      featLabel:'Darum Secret EA', featTitle:'Der Handelsroboter', featTitleSpan:'für Ihre Strategie',
+      featDesc:'Professionelle Automatisierungstechnologie für einen strukturierten Handelsablauf.',
+      f1t:'100 % automatisiert', f1d:'Die Software kann entsprechend Ihren Einstellungen kontinuierlich laufen. Regelmäßige Kontrolle und Risikobegrenzung bleiben wichtig.',
+      f2t:'Risikosteuerung', f2d:'Intelligente Hedging-Strategie mit konfigurierbaren Voreinstellungen. Prüfen Sie jede Einstellung anhand Ihrer Ziele und Risikotoleranz.',
+      f3t:'Performance-Informationen', f3d:'Historische Performancedaten können, sofern verfügbar, auf Myfxbook eingesehen werden. Vergangene Ergebnisse lassen keine verlässlichen Rückschlüsse auf zukünftige Ergebnisse zu.',
+      f4t:'MT4 & MT5', f4d:'Kompatibel mit zwei der weltweit meistgenutzten Plattformen. Einfache Einrichtung mit Support.',
+      bonusLabel:'In Ihrem Angebot enthalten', bonusTitle:'Alles, was Sie', bonusTitleSpan:'erhalten',
+      bonusDesc:'Mit dem Beitritt zum Kanal erhalten Sie Zugriff auf Ressourcen, die Ihren Handelsablauf unterstützen.',
+      b1Badge:'Kostenlos', b1Title:'Signal-Kanal', b1Desc:'Erhalten Sie Einstiegshinweise in Echtzeit direkt im VIP-Kanal.',
+      b1_1:'Signale für XAU/USD und wichtige Währungspaare', b1_2:'Einstieg, Stop-Loss und Take-Profit angegeben', b1_3:'Marktkontext zu jedem Signal', b1_4:'Direkt über Telegram',
+      b2Badge:'Inklusive', b2Title:'Copy Trading', b2Desc:'Replizieren Sie Trades mit unterstützten Automatisierungstools, nachdem Sie Einstellungen und Risikoparameter geprüft haben.',
+      b2_1:'Automatisierte Replikation von Trades', b2_2:'Funktioniert mit MT4 und MT5', b2_3:'Einführung für neue Nutzer verfügbar', b2_4:'Einstellungen und Risiken vor Aktivierung prüfen',
+      b3Badge:'Exklusiv', b3Title:'VIP-Bonus', b3Desc:'Kanalmitglieder erhalten Zugang zu zusätzlichen Inhalten und Funktionen.',
+      b3_1:'Vollständiger Zugang zum Expert Advisor', b3_2:'Vorkonfigurierte Presets', b3_3:'Software-Updates inklusive', b3_4:'Direkter Support durch das Team',
+      bottomH2:'Bereit für den', bottomSpan:'nächsten Schritt?', bottomP:'Treten Sie dem Kanal bei und erfahren Sie, wie Secret EA Handelsabläufe automatisieren kann.',
+      btnBottom:'Telegram: Gruppenchat beitreten',
+      disclaimer:'⚠️ <strong>Risikohinweis:</strong> Geschäfte an den Finanzmärkten sind mit Risiken verbunden. Frühere Ergebnisse sind keine Garantie für zukünftige Ergebnisse. Die Performance kann je nach Marktbedingungen, gewählten Einstellungen und individuellem Risikoprofil variieren. Handeln Sie niemals mit Geld, dessen Verlust Sie nicht verkraften können. Dieser Kanal dient ausschließlich Bildungs- und Informationszwecken.',
+      footerCopy:'© 2026 Secret EA — Alle Rechte vorbehalten.'
+    },
+    fr: {
+      dir:'ltr', htmlLang:'fr', title:'Secret EA — Trading Forex automatisé',
+      description:'Découvrez les outils d’automatisation Secret EA pour MT4 et MT5, les signaux de trading, le copy trading et les ressources de gestion des risques.',
+      heroLead:'Tradez en', heroSpan:'mode automatique',
+      heroSub:'Expert Advisor pour MT4 et MT5 doté d’une stratégie de couverture intelligente. Automatisez certaines opérations et accédez aux signaux, au copy trading et à d’autres fonctionnalités.',
+      stat1:'Compatible', stat2:'Compatible', stat3:'Automatisé', stat4:'Accès inclus',
+      btnHero:'Telegram : rejoindre le groupe', ctaNote:'Accès gratuit · Contenu pédagogique · Approche attentive aux risques',
+      featLabel:'Pourquoi nous choisir', featTitle:'Le robot conçu', featTitleSpan:'pour votre stratégie',
+      featDesc:'Une technologie d’automatisation professionnelle au service d’un trading structuré.',
+      f1t:'100 % automatisé', f1d:'Le logiciel peut fonctionner en continu selon les paramètres choisis. Une surveillance régulière et des contrôles des risques restent indispensables.',
+      f2t:'Gestion des risques', f2d:'Stratégie de couverture intelligente avec préréglages configurables. Examinez chaque paramètre selon vos objectifs et votre tolérance au risque.',
+      f3t:'Informations de performance', f3d:'Les données de performance historiques peuvent être consultées sur Myfxbook lorsqu’elles sont disponibles. Les performances passées ne préjugent pas des résultats futurs.',
+      f4t:'MT4 et MT5', f4d:'Compatible avec deux des plateformes les plus utilisées au monde. Installation simple avec assistance incluse.',
+      bonusLabel:'Inclus dans votre offre', bonusTitle:'Tout ce que vous', bonusTitleSpan:'recevez',
+      bonusDesc:'En rejoignant le canal, vous accédez à des ressources conçues pour accompagner votre organisation de trading.',
+      b1Badge:'Gratuit', b1Title:'Salon de signaux', b1Desc:'Recevez des alertes d’entrée en temps réel directement dans le canal VIP.',
+      b1_1:'Signaux XAU/USD et principales paires', b1_2:'Entrée, stop loss et take profit indiqués', b1_3:'Contexte de marché pour chaque signal', b1_4:'Envoi direct via Telegram',
+      b2Badge:'Inclus', b2Title:'Copy Trading', b2Desc:'Répliquez des opérations avec les outils d’automatisation compatibles après avoir examiné les paramètres disponibles et les niveaux de risque.',
+      b2_1:'Réplication automatisée des opérations', b2_2:'Compatible avec MT4 et MT5', b2_3:'Accompagnement disponible pour les nouveaux utilisateurs', b2_4:'Vérifiez les paramètres et les risques avant activation',
+      b3Badge:'Exclusif', b3Title:'Bonus VIP', b3Desc:'Les membres du canal accèdent à des contenus et fonctionnalités supplémentaires.',
+      b3_1:'Accès complet à l’Expert Advisor', b3_2:'Préréglages prêts à l’emploi', b3_3:'Mises à jour du logiciel incluses', b3_4:'Assistance directe de l’équipe',
+      bottomH2:'Prêt à', bottomSpan:'commencer ?', bottomP:'Rejoignez le canal et découvrez comment Secret EA peut automatiser certaines étapes de votre trading.',
+      btnBottom:'Telegram : rejoindre le groupe',
+      disclaimer:'⚠️ <strong>Avertissement sur les risques :</strong> Les opérations sur les marchés financiers comportent des risques. Les résultats passés ne garantissent pas les résultats futurs. Les performances peuvent varier selon les conditions de marché, les paramètres utilisés et le profil de risque de chaque utilisateur. Ne tradez jamais avec de l’argent que vous ne pouvez pas vous permettre de perdre. Ce canal est fourni à des fins éducatives et informatives uniquement.',
+      footerCopy:'© 2026 Secret EA — Tous droits réservés.'
+    },
+    it: {
+      dir:'ltr', htmlLang:'it', title:'Secret EA — Trading Forex automatizzato',
+      description:'Scopri gli strumenti di automazione Secret EA per MT4 e MT5, i segnali di trading, il copy trading e le risorse per la gestione del rischio.',
+      heroLead:'Fai trading con il', heroSpan:'pilota automatico',
+      heroSub:'Expert Advisor per MT4 e MT5 con strategia di copertura intelligente. Automatizza alcune operazioni e accedi a segnali, copy trading e altre funzionalità.',
+      stat1:'Compatibile', stat2:'Compatibile', stat3:'Automatizzato', stat4:'Accesso incluso',
+      btnHero:'Telegram: unisciti al gruppo', ctaNote:'Accesso gratuito · Contenuti formativi · Approccio consapevole al rischio',
+      featLabel:'Perché sceglierci', featTitle:'Il robot pensato', featTitleSpan:'per la tua strategia',
+      featDesc:'Tecnologia di automazione professionale per un flusso di trading più strutturato.',
+      f1t:'100% automatizzato', f1d:'Il software può funzionare in modo continuativo in base alle impostazioni scelte. Il monitoraggio regolare e i controlli del rischio restano fondamentali.',
+      f2t:'Gestione del rischio', f2d:'Strategia di copertura intelligente con preset configurabili. Valuta ogni impostazione in base ai tuoi obiettivi e alla tua tolleranza al rischio.',
+      f3t:'Informazioni sulle performance', f3d:'I dati storici sulle performance possono essere consultati su Myfxbook, quando disponibili. I risultati passati non sono indicativi di quelli futuri.',
+      f4t:'MT4 e MT5', f4d:'Compatibile con due delle piattaforme più utilizzate al mondo. Configurazione semplice con assistenza inclusa.',
+      bonusLabel:'Incluso nella tua offerta', bonusTitle:'Tutto ciò che', bonusTitleSpan:'ricevi',
+      bonusDesc:'Entrando nel canale, accedi a risorse pensate per supportare il tuo flusso operativo.',
+      b1Badge:'Gratis', b1Title:'Sala segnali', b1Desc:'Ricevi avvisi di ingresso in tempo reale direttamente nel canale VIP.',
+      b1_1:'Segnali XAU/USD e principali coppie', b1_2:'Ingresso, stop loss e take profit indicati', b1_3:'Contesto di mercato per ogni segnale', b1_4:'Invio diretto tramite Telegram',
+      b2Badge:'Incluso', b2Title:'Copy Trading', b2Desc:'Replica le operazioni con strumenti di automazione supportati dopo aver verificato le impostazioni e i parametri di rischio disponibili.',
+      b2_1:'Replica automatizzata delle operazioni', b2_2:'Funziona con MT4 e MT5', b2_3:'Guida disponibile per i nuovi utenti', b2_4:'Verifica impostazioni e rischi prima dell’attivazione',
+      b3Badge:'Esclusivo', b3Title:'Bonus VIP', b3Desc:'I membri del canale accedono a contenuti e funzionalità aggiuntive.',
+      b3_1:'Accesso completo all’Expert Advisor', b3_2:'Preset già configurati', b3_3:'Aggiornamenti del software inclusi', b3_4:'Assistenza diretta del team',
+      bottomH2:'Pronto per', bottomSpan:'iniziare?', bottomP:'Unisciti al canale e scopri come Secret EA può automatizzare alcune fasi del tuo trading.',
+      btnBottom:'Telegram: unisciti al gruppo',
+      disclaimer:'⚠️ <strong>Avvertenza sui rischi:</strong> Le operazioni sui mercati finanziari comportano rischi. I risultati passati non garantiscono risultati futuri. Le performance possono variare in base alle condizioni di mercato, alle impostazioni utilizzate e al profilo di rischio di ciascun utente. Non fare mai trading con denaro che non puoi permetterti di perdere. Questo canale ha esclusivamente finalità educative e informative.',
+      footerCopy:'© 2026 Secret EA — Tutti i diritti riservati.'
     }
   };
 
@@ -462,9 +551,11 @@ fbq('track', 'PageView');
     document.documentElement.lang = t.htmlLang;
     document.documentElement.dir = t.dir;
     document.title = t.title;
+    document.querySelector('meta[name="description"]').setAttribute('content', t.description);
     document.body.classList.toggle('rtl', t.dir === 'rtl');
 
     // Hero
+    document.getElementById('hero-h1').childNodes[0].textContent = t.heroLead;
     document.getElementById('hero-span').textContent = t.heroSpan;
     document.getElementById('hero-sub').textContent = t.heroSub;
     document.getElementById('stat1').textContent = t.stat1;
@@ -526,7 +617,9 @@ fbq('track', 'PageView');
     // Update active button
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.querySelectorAll('.lang-btn').forEach(b => {
-      if (b.textContent === lang.toUpperCase()) b.classList.add('active');
+      const active = b.dataset.lang === lang;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
 
     // Save preference
@@ -555,6 +648,7 @@ fbq('track', 'PageView');
       if (['es'].includes(code)) return 'es';
       // English (default)
       if (['en'].includes(code)) return 'en';
+      if (['de','fr','it'].includes(code)) return code;
     }
 
     // 4. Geo-based detection via timezone
