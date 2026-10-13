@@ -14,7 +14,9 @@
 !function(f,b,e,v,n,t,s){
   if(f.fbq)return;
   n=f.fbq=function(){
-    n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments);
+    n.callMethod
+      ? n.callMethod.apply(n,arguments)
+      : n.queue.push(arguments);
   };
   if(!f._fbq)f._fbq=n;
   n.push=n;
@@ -28,75 +30,13 @@
   s.parentNode.insertBefore(t,s);
 }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '2002568093760432');  /* Perfil 252 */
-fbq('init', '1468643302136617');  /* Perfil 257 */
-fbq('init', '1794797641568423');  /* Perfil 259 */
-fbq('init', '2895659087476822');  /* Perfil 345 */
-fbq('init', '1780999973147445');  /* Perfil 348 */
-fbq('init', '28801339466152113'); /* Perfil 349 */
-fbq('init', '1141046428451414');  /* Perfil 350 */
-fbq('init', '1283250517219975');  /* Perfil 380 */
-fbq('init', '1767346917835999');  /* Perfil 393 */
-fbq('init', '1081429168142440');  /* Perfil 394 */
-fbq('init', '1050380464714311');  /* Perfil 395 */
-fbq('init', '1470418478294815');  /* Perfil 396 */
-fbq('init', '1581608426454680');  /* Perfil 398 */
-
+fbq('init', '954143104396909');
 fbq('track', 'PageView');
 </script>
 
 <noscript>
-  <!-- Perfil 252 -->
   <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=2002568093760432&ev=PageView&noscript=1">
-
-  <!-- Perfil 257 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1468643302136617&ev=PageView&noscript=1">
-
-  <!-- Perfil 259 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1794797641568423&ev=PageView&noscript=1">
-
-  <!-- Perfil 345 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=2895659087476822&ev=PageView&noscript=1">
-
-  <!-- Perfil 348 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1780999973147445&ev=PageView&noscript=1">
-
-  <!-- Perfil 349 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=28801339466152113&ev=PageView&noscript=1">
-
-  <!-- Perfil 350 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1141046428451414&ev=PageView&noscript=1">
-
-  <!-- Perfil 380 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1283250517219975&ev=PageView&noscript=1">
-
-  <!-- Perfil 393 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1767346917835999&ev=PageView&noscript=1">
-
-  <!-- Perfil 394 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1081429168142440&ev=PageView&noscript=1">
-
-  <!-- Perfil 395 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1050380464714311&ev=PageView&noscript=1">
-
-  <!-- Perfil 396 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1470418478294815&ev=PageView&noscript=1">
-
-  <!-- Perfil 398 -->
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=1581608426454680&ev=PageView&noscript=1">
+       src="https://www.facebook.com/tr?id=954143104396909&ev=PageView&noscript=1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
   <style>
@@ -158,15 +98,23 @@ fbq('track', 'PageView');
     .stat-label{font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-top:4px}
 
     .cta-wrap{animation:fadeDown .9s .4s ease both}
+    .cta-options{width:min(100%,680px);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .cta-options .btn-cta:first-child{grid-column:1/-1}
     .btn-cta{display:inline-flex;align-items:center;gap:12px;
       background:linear-gradient(135deg,var(--gold),#9a6f28,var(--gold));background-size:200%;
       color:#06080b;font-family:'DM Sans',sans-serif;font-weight:600;font-size:16px;
       letter-spacing:.4px;padding:19px 44px;border-radius:7px;text-decoration:none;
       transition:transform .25s,box-shadow .25s;
       box-shadow:0 6px 40px rgba(201,168,76,.38);
-      animation:shimmer 3.5s linear infinite;cursor:pointer;border:none}
+      animation:shimmer 3.5s linear infinite;cursor:pointer;border:none;justify-content:center;text-align:center}
     .btn-cta:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 12px 60px rgba(201,168,76,.55)}
     .btn-cta svg{width:22px;height:22px;fill:#06080b;flex-shrink:0}
+    .btn-cta.btn-support{background:var(--dark3);color:var(--text);border:1px solid rgba(79,183,255,.38);box-shadow:none;animation:none}
+    .btn-cta.btn-support svg{fill:#4fb7ff}
+    .btn-cta.btn-support:hover{border-color:#4fb7ff;box-shadow:0 10px 34px rgba(79,183,255,.16)}
+    .btn-cta.btn-whatsapp{background:var(--dark3);color:var(--text);border:1px solid rgba(37,211,102,.38);box-shadow:none;animation:none}
+    .btn-cta.btn-whatsapp svg{fill:#25d366}
+    .btn-cta.btn-whatsapp:hover{border-color:#25d366;box-shadow:0 10px 34px rgba(37,211,102,.16)}
     .cta-note{font-size:12px;color:var(--muted);margin-top:14px;letter-spacing:.4px}
 
     section{position:relative;z-index:1}
@@ -224,7 +172,8 @@ fbq('track', 'PageView');
     footer a{color:var(--gold);text-decoration:none}
 
     @keyframes fadeDown{from{opacity:0;transform:translateY(-18px)}to{opacity:1;transform:translateY(0)}}
-    @media(max-width:480px){.hero{padding-top:104px}.stats{gap:20px}.btn-cta{padding:17px 28px;font-size:15px}.lang-switcher{top:10px;right:10px;left:10px;gap:5px;max-width:none;justify-content:center}.lang-btn{padding:5px 9px;font-size:11px}body.rtl .lang-switcher{right:10px;left:10px}}
+    @media(max-width:620px){.cta-options{grid-template-columns:1fr}.cta-options .btn-cta:first-child{grid-column:auto}}
+    @media(max-width:480px){.hero{padding-top:104px}.stats{gap:20px}.btn-cta{padding:17px 18px;font-size:14px}.lang-switcher{top:10px;right:10px;left:10px;gap:5px;max-width:none;justify-content:center}.lang-btn{padding:5px 9px;font-size:11px}body.rtl .lang-switcher{right:10px;left:10px}}
   </style>
 </head>
 <body>
@@ -257,11 +206,23 @@ fbq('track', 'PageView');
     </div>
 
     <div class="cta-wrap">
-      <a class="btn-cta" href="https://t.me/Secretgoldea_bot" target="_blank" rel="noopener"
-         onclick="fbq('track','Lead',{content_name:'Telegram Hero Button'});">
-        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
-        <span id="btn-hero">Telegram: Join Group Chat</span>
-      </a>
+      <div class="cta-options">
+        <a class="btn-cta" href="https://t.me/+-JulVLXlxpQ2YTMx" target="_blank" rel="noopener"
+           onclick="fbq('track','Lead',{content_name:'Official Telegram Channel Hero'});">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
+          <span id="btn-channel-hero">Join Official Telegram Channel</span>
+        </a>
+        <a class="btn-cta btn-support" href="https://t.me/Secretgoldea_bot" target="_blank" rel="noopener"
+           onclick="fbq('track','Contact',{content_name:'Telegram Bot Hero'});">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
+          <span id="btn-telegram-hero">Questions? Chat with our Bot</span>
+        </a>
+        <a class="btn-cta btn-whatsapp" href="https://wa.me/5527995198740?text=Hello%2C%20I%20cannot%20access%20the%20Secret%20EA%20Telegram%20channel.%20Can%20you%20help%20me%3F" target="_blank" rel="noopener"
+           onclick="fbq('track','Contact',{content_name:'WhatsApp Support Hero'});">
+          <svg viewBox="0 0 24 24"><path d="M12 2a9.82 9.82 0 0 0-8.39 14.92L2 22l5.22-1.56A9.85 9.85 0 1 0 12 2zm0 17.7a7.75 7.75 0 0 1-3.95-1.08l-.29-.17-3.1.93.95-3.02-.19-.31A7.78 7.78 0 1 1 12 19.7zm4.27-5.82c-.23-.12-1.38-.68-1.6-.76-.21-.08-.37-.12-.53.12-.16.23-.61.76-.75.91-.14.16-.27.18-.51.06-.23-.12-.99-.36-1.88-1.16a7.11 7.11 0 0 1-1.3-1.62c-.14-.23-.01-.36.1-.47.11-.1.24-.27.35-.41.12-.14.16-.23.24-.39.08-.16.04-.29-.02-.41-.06-.12-.53-1.28-.72-1.75-.19-.46-.39-.4-.53-.41h-.45c-.16 0-.41.06-.63.29-.21.23-.82.8-.82 1.96 0 1.15.84 2.27.96 2.42.12.16 1.65 2.52 4 3.54.56.24 1 .39 1.34.5.56.18 1.07.15 1.47.09.45-.07 1.38-.56 1.58-1.11.19-.54.19-1.01.14-1.11-.06-.09-.22-.15-.45-.27z"/></svg>
+          <span id="btn-whatsapp-hero">Can't access Telegram? WhatsApp</span>
+        </a>
+      </div>
       <p class="cta-note" id="cta-note">Free entry · Educational content · Risk-conscious approach</p>
     </div>
   </section>
@@ -355,11 +316,23 @@ fbq('track', 'PageView');
     <div class="bottom-cta">
       <h2 id="bottom-h2">Ready to<br /><span style="color:var(--gold)" id="bottom-span">Get Started?</span></h2>
       <p id="bottom-p">Join the channel now and discover how to automate your trades with Secret EA.</p>
-      <a class="btn-cta" href="https://t.me/Secretgoldea_bot" target="_blank" rel="noopener"
-         onclick="fbq('track','Lead',{content_name:'Telegram Bottom Button'});">
-        <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
-        <span id="btn-bottom">Telegram: Join Group Chat</span>
-      </a>
+      <div class="cta-options">
+        <a class="btn-cta" href="https://t.me/+-JulVLXlxpQ2YTMx" target="_blank" rel="noopener"
+           onclick="fbq('track','Lead',{content_name:'Official Telegram Channel Bottom'});">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
+          <span id="btn-channel-bottom">Join Official Telegram Channel</span>
+        </a>
+        <a class="btn-cta btn-support" href="https://t.me/Secretgoldea_bot" target="_blank" rel="noopener"
+           onclick="fbq('track','Contact',{content_name:'Telegram Bot Bottom'});">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.247l-2.01 9.473c-.148.658-.537.818-1.088.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.053-.333-.373-.12L7.24 14.42l-2.95-.924c-.642-.2-.655-.642.134-.953l11.5-4.432c.534-.194 1.001.13.638.136z"/></svg>
+          <span id="btn-telegram-bottom">Questions? Chat with our Bot</span>
+        </a>
+        <a class="btn-cta btn-whatsapp" href="https://wa.me/5527995198740?text=Hello%2C%20I%20cannot%20access%20the%20Secret%20EA%20Telegram%20channel.%20Can%20you%20help%20me%3F" target="_blank" rel="noopener"
+           onclick="fbq('track','Contact',{content_name:'WhatsApp Support Bottom'});">
+          <svg viewBox="0 0 24 24"><path d="M12 2a9.82 9.82 0 0 0-8.39 14.92L2 22l5.22-1.56A9.85 9.85 0 1 0 12 2zm0 17.7a7.75 7.75 0 0 1-3.95-1.08l-.29-.17-3.1.93.95-3.02-.19-.31A7.78 7.78 0 1 1 12 19.7zm4.27-5.82c-.23-.12-1.38-.68-1.6-.76-.21-.08-.37-.12-.53.12-.16.23-.61.76-.75.91-.14.16-.27.18-.51.06-.23-.12-.99-.36-1.88-1.16a7.11 7.11 0 0 1-1.3-1.62c-.14-.23-.01-.36.1-.47.11-.1.24-.27.35-.41.12-.14.16-.23.24-.39.08-.16.04-.29-.02-.41-.06-.12-.53-1.28-.72-1.75-.19-.46-.39-.4-.53-.41h-.45c-.16 0-.41.06-.63.29-.21.23-.82.8-.82 1.96 0 1.15.84 2.27.96 2.42.12.16 1.65 2.52 4 3.54.56.24 1 .39 1.34.5.56.18 1.07.15 1.47.09.45-.07 1.38-.56 1.58-1.11.19-.54.19-1.01.14-1.11-.06-.09-.22-.15-.45-.27z"/></svg>
+          <span id="btn-whatsapp-bottom">Can't access Telegram? WhatsApp</span>
+        </a>
+      </div>
       <div class="disclaimer" id="disclaimer">
         ⚠️ <strong>Risk Warning:</strong> Trading in financial markets involves risk. Past results do not guarantee future results. Performance may vary according to market conditions, the settings used and each user's risk profile. Never trade with money you cannot afford to lose. This channel is for educational and informational purposes only.
       </div>
@@ -368,7 +341,11 @@ fbq('track', 'PageView');
 
   <footer>
     <p id="footer-copy">© 2026 Secret EA — All rights reserved.</p>
-    <p>Telegram: <a href="https://t.me/Secretgoldea_bot" target="_blank" rel="noopener">📈 Secret - Gold EA</a></p>
+    <p>
+      <a href="https://t.me/+-JulVLXlxpQ2YTMx" target="_blank" rel="noopener">Official Telegram Channel</a>
+      · <a href="https://t.me/Secretgoldea_bot" target="_blank" rel="noopener">Telegram Bot</a>
+      · <a href="https://wa.me/5527995198740" target="_blank" rel="noopener">WhatsApp Support</a>
+    </p>
   </footer>
 
   <script>
@@ -385,6 +362,7 @@ fbq('track', 'PageView');
       heroSub: 'Expert Advisor for MT4 & MT5 with smart hedge strategy. Automate your trades and access signals, copy trading and much more.',
       stat1:'Compatible', stat2:'Compatible', stat3:'Automated', stat4:'Access Included',
       btnHero:'Telegram: Join Group Chat',
+      btnChannel:'Join Official Telegram Channel', btnTelegramSupport:'Questions? Chat with our Bot', btnWhatsApp:'Can\'t access Telegram? WhatsApp',
       ctaNote:'Free entry · Educational content · Risk-conscious approach',
       featLabel:'Why choose us',
       featTitle:'The Robot that Works',
@@ -423,6 +401,7 @@ fbq('track', 'PageView');
       heroSub: 'Expert Advisor para MT4 y MT5 con estrategia de cobertura inteligente. Automatiza tus operaciones y accede a señales, copy trading y mucho más.',
       stat1:'Compatible', stat2:'Compatible', stat3:'Automatizado', stat4:'Acceso VIP Incluido',
       btnHero:'Telegram: Unirse al Grupo',
+      btnChannel:'Unirse al canal oficial de Telegram', btnTelegramSupport:'¿Tienes preguntas? Habla con nuestro bot', btnWhatsApp:'¿No puedes acceder? WhatsApp',
       ctaNote:'Acceso gratuito · Contenido educativo · Enfoque responsable del riesgo',
       featLabel:'Por qué elegirnos',
       featTitle:'El Robot que Trabaja',
@@ -461,6 +440,7 @@ fbq('track', 'PageView');
       heroSub: 'خبير مستشار لـ MT4 و MT5 مع استراتيجية تحوط ذكية. أتمتة صفقاتك والوصول إلى الإشارات والنسخ والمزيد.',
       stat1:'متوافق', stat2:'متوافق', stat3:'آلي', stat4:'وصول VIP مشمول',
       btnHero:'تيليغرام: انضم إلى المجموعة',
+      btnChannel:'انضم إلى قناة تيليغرام الرسمية', btnTelegramSupport:'لديك أسئلة؟ تحدث مع الروبوت', btnWhatsApp:'لا يمكنك الوصول؟ واتساب',
       ctaNote:'دخول مجاني · محتوى تعليمي · نهج واعٍ بالمخاطر',
       featLabel:'لماذا تختارنا',
       featTitle:'الروبوت الذي يعمل',
@@ -495,7 +475,7 @@ fbq('track', 'PageView');
       heroLead:'Handeln mit', heroSpan:'Autopilot',
       heroSub:'Expert Advisor für MT4 und MT5 mit intelligenter Hedging-Strategie. Automatisieren Sie Abläufe und nutzen Sie Signale, Copy Trading und weitere Funktionen.',
       stat1:'Kompatibel', stat2:'Kompatibel', stat3:'Automatisiert', stat4:'Zugang inklusive',
-      btnHero:'Telegram: Gruppenchat beitreten', ctaNote:'Kostenloser Zugang · Lerninhalte · Risikobewusster Ansatz',
+      btnHero:'Telegram: Gruppenchat beitreten', btnChannel:'Offiziellen Telegram-Kanal öffnen', btnTelegramSupport:'Fragen? Mit unserem Bot chatten', btnWhatsApp:'Kein Telegram-Zugang? WhatsApp', ctaNote:'Kostenloser Zugang · Lerninhalte · Risikobewusster Ansatz',
       featLabel:'Darum Secret EA', featTitle:'Der Handelsroboter', featTitleSpan:'für Ihre Strategie',
       featDesc:'Professionelle Automatisierungstechnologie für einen strukturierten Handelsablauf.',
       f1t:'100 % automatisiert', f1d:'Die Software kann entsprechend Ihren Einstellungen kontinuierlich laufen. Regelmäßige Kontrolle und Risikobegrenzung bleiben wichtig.',
@@ -521,7 +501,7 @@ fbq('track', 'PageView');
       heroLead:'Tradez en', heroSpan:'mode automatique',
       heroSub:'Expert Advisor pour MT4 et MT5 doté d’une stratégie de couverture intelligente. Automatisez certaines opérations et accédez aux signaux, au copy trading et à d’autres fonctionnalités.',
       stat1:'Compatible', stat2:'Compatible', stat3:'Automatisé', stat4:'Accès inclus',
-      btnHero:'Telegram : rejoindre le groupe', ctaNote:'Accès gratuit · Contenu pédagogique · Approche attentive aux risques',
+      btnHero:'Telegram : rejoindre le groupe', btnChannel:'Rejoindre le canal Telegram officiel', btnTelegramSupport:'Des questions ? Parlez à notre bot', btnWhatsApp:'Telegram inaccessible ? WhatsApp', ctaNote:'Accès gratuit · Contenu pédagogique · Approche attentive aux risques',
       featLabel:'Pourquoi nous choisir', featTitle:'Le robot conçu', featTitleSpan:'pour votre stratégie',
       featDesc:'Une technologie d’automatisation professionnelle au service d’un trading structuré.',
       f1t:'100 % automatisé', f1d:'Le logiciel peut fonctionner en continu selon les paramètres choisis. Une surveillance régulière et des contrôles des risques restent indispensables.',
@@ -547,7 +527,7 @@ fbq('track', 'PageView');
       heroLead:'Fai trading con il', heroSpan:'pilota automatico',
       heroSub:'Expert Advisor per MT4 e MT5 con strategia di copertura intelligente. Automatizza alcune operazioni e accedi a segnali, copy trading e altre funzionalità.',
       stat1:'Compatibile', stat2:'Compatibile', stat3:'Automatizzato', stat4:'Accesso incluso',
-      btnHero:'Telegram: unisciti al gruppo', ctaNote:'Accesso gratuito · Contenuti formativi · Approccio consapevole al rischio',
+      btnHero:'Telegram: unisciti al gruppo', btnChannel:'Entra nel canale Telegram ufficiale', btnTelegramSupport:'Domande? Parla con il nostro bot', btnWhatsApp:'Telegram non disponibile? WhatsApp', ctaNote:'Accesso gratuito · Contenuti formativi · Approccio consapevole al rischio',
       featLabel:'Perché sceglierci', featTitle:'Il robot pensato', featTitleSpan:'per la tua strategia',
       featDesc:'Tecnologia di automazione professionale per un flusso di trading più strutturato.',
       f1t:'100% automatizzato', f1d:'Il software può funzionare in modo continuativo in base alle impostazioni scelte. Il monitoraggio regolare e i controlli del rischio restano fondamentali.',
@@ -586,7 +566,9 @@ fbq('track', 'PageView');
     document.getElementById('stat2').textContent = t.stat2;
     document.getElementById('stat3').textContent = t.stat3;
     document.getElementById('stat4').textContent = t.stat4;
-    document.getElementById('btn-hero').textContent = t.btnHero;
+    document.getElementById('btn-channel-hero').textContent = t.btnChannel;
+    document.getElementById('btn-telegram-hero').textContent = t.btnTelegramSupport;
+    document.getElementById('btn-whatsapp-hero').textContent = t.btnWhatsApp;
     document.getElementById('cta-note').textContent = t.ctaNote;
 
     // Features
@@ -634,7 +616,9 @@ fbq('track', 'PageView');
     document.getElementById('bottom-h2').childNodes[0].textContent = t.bottomH2 + ' ';
     document.getElementById('bottom-span').textContent = t.bottomSpan;
     document.getElementById('bottom-p').textContent = t.bottomP;
-    document.getElementById('btn-bottom').textContent = t.btnBottom;
+    document.getElementById('btn-channel-bottom').textContent = t.btnChannel;
+    document.getElementById('btn-telegram-bottom').textContent = t.btnTelegramSupport;
+    document.getElementById('btn-whatsapp-bottom').textContent = t.btnWhatsApp;
     document.getElementById('disclaimer').innerHTML = t.disclaimer;
     document.getElementById('footer-copy').textContent = t.footerCopy;
 
